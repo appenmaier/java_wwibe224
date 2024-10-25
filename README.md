@@ -9,7 +9,7 @@
 ## Klone das remote Repository
 
 - Starte die Kommandozeile (z.B. Windows PowerShell)
-- Führe den Befehl `git clone https://github.com/appenmaier/java_wwibe124 "[Pfad/Der Name Deines lokalen Repositorys]"` aus, um das remote Repository zu klonen
+- Führe den Befehl `git clone https://github.com/appenmaier/java_wwibe224 "[Pfad/Der Name Deines lokalen Repositorys]"` aus, um das remote Repository zu klonen
 
 ## Binde das lokale Repository in Eclipse oder in BlueJ ein
 
