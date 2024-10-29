@@ -25,8 +25,9 @@ public class D04_DataObjects {
     System.out.println("sizeInM: " + sizeInM);
     System.out.println("oldSizeInM: " + oldSizeInM);
 
-    /* fixe Datenobjekte / Konstanten */
-    final double PI = 3.14159265359;
+    /* unveränderliche Datenobjekte */
+    final String description = "Java";
+    // description = "Python";
 
   }
 
