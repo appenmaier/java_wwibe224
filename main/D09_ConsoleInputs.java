@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class D09_ConsoleInputs {
 
+  @SuppressWarnings("resource")
   public static void main(String[] args) {
 
     /* Scanner initialisieren */
