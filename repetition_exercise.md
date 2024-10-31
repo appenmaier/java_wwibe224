@@ -1,6 +1,6 @@
 # Szenario
 
-Es soll Schritt für Schritt ein kleines Strategiespiel für zwei Spieler entwicklet werden, bei dem beide Spieler abwechselnd einen der eigenen Kämpfer gegen einen Kämpfer des anderen Spielers angreifen lassen.
+Es soll Schritt für Schritt ein kleines Strategiespiel für zwei Spieler entwickelt werden, bei dem beide Spieler abwechselnd einen der eigenen Kämpfer gegen einen Kämpfer des anderen Spielers angreifen lassen.
 
 # Aufgabe 1 (Wiederholung Vorlesung 1 - 3)
 
