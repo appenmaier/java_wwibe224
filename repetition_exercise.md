@@ -507,3 +507,9 @@ Gregor erleidet 3 Schaden und hat noch 1 LP.
 Hans gib bitte an, ob Gregor kritisch Schlagen (1), Schlagen (2), Kritisch Blocken (3) oder Blocken (4) soll: 2
 Bonekraka erleidet 3 Schaden und stirbt.
 ```
+
+# Aufgabe 3 (Wiederholung Vorlesung 5 - 6)
+
+Überführe das Spiel in einen objektorientierten Programmentwurf. Erstelle dazu
+Klassen mit entsprechenden Attributen und Methoden für alle Entitäten des
+abgebildeten ER-Modells.
