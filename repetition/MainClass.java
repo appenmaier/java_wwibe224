@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class MainClass {
 
+  @SuppressWarnings({"unused", "resource"})
   public static void main(String[] args) {
 
     /* Datenobjekte */
