@@ -3,23 +3,34 @@ package main;
 import java.util.Scanner;
 
 /**
- * If Cases
+ * Branches
  *
  * @author Daniel Appenmaier
  * @version 1.0
  *
  */
-public class D11_IfCases {
+public class D11_Branches {
 
   @SuppressWarnings("resource")
   public static void main(String[] args) {
 
     Scanner myScanner = new Scanner(System.in);
-
     int age;
-
     System.out.print("Gib bitte Dein Alter ein: ");
     age = myScanner.nextInt();
+
+    /* Vergleichsoperatoren */
+    // != (ungleich)
+    // == (gleich)
+    // > (größer)
+    // >= (größergleich)
+    // < (kleiner)
+    // <= (kleinergleich)
+
+    /* Logische Operatoren */
+    // && (logisches UND)
+    // || (logisches ODER)
+    // ! (logische Verneinung)
 
     /* Einfachverzweigungen */
     if (age >= 18) {
@@ -27,11 +38,6 @@ public class D11_IfCases {
     } else {
       System.out.println("Du bist minderjährig");
     }
-
-    // Vergleichsoperatoren: != (ungleich), == (gleich), > (größer), >= (größergleich), < (kleiner)
-    // und <= (kleinergleich)
-
-    // Logische Operatoren: && (logisches UND), || (logisches ODER), ! (logische Verneinung)
 
     /* Mehrfachverzweigungen */
     if (age < 12) {
