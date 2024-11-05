@@ -31,6 +31,8 @@ public class D09_ConsoleInputs {
     System.out.println("boolean1: " + boolean1);
 
     System.out.print("Bitte gib genau ein Zeichen ein: ");
+    // String input = myScanner.next();
+    // char char1 = input.charAt(0);
     char char1 = myScanner.next().charAt(0);
     System.out.println("char1: " + char1);
 
