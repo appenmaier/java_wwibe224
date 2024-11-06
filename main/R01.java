@@ -1,12 +1,15 @@
-package repetition;
+package main;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class MainClass {
+public class R01 {
 
-  @SuppressWarnings({"unused", "resource"})
+  @SuppressWarnings({"resource", "unused"})
   public static void main(String[] args) {
+
+    Scanner myScanner = new Scanner(System.in);
+    Random myRandom = new Random();
 
     /* Datenobjekte */
     // Spieler
@@ -16,19 +19,10 @@ public class MainClass {
     // Kämpfer
     String nameOfFighter1;
     int hpOfFighter1;
-    int dvOfFighter1;
     String nameOfFighter2;
     int hpOfFighter2;
-    int dvOfFighter2;
-
-    // Waffen
-    String nameOfWeapon1;
-    int avOfWeapon1;
-    String nameOfWeapon2;
-    int avOfWeapon2;
 
     // Würfel
-    Random myRandom = new Random();
     int valueOfDice1;
     int valueOfDice2;
     int valueOfDice3;
@@ -41,39 +35,30 @@ public class MainClass {
     int valueOfDice10;
 
     /* Wertzuweisungen */
-    Scanner myScanner = new Scanner(System.in);
-
     System.out.print("Spieler 1, Name: ");
     nameOfPlayer1 = myScanner.next();
     System.out.print("Spieler 1, Kämpfer 1, Name: ");
     nameOfFighter1 = myScanner.next();
     System.out.print("Spieler 1, Kämpfer 1, LP: ");
     hpOfFighter1 = myScanner.nextInt();
-    System.out.print("Spieler 1, Kämpfer 1, VW: ");
-    dvOfFighter1 = myScanner.nextInt();
-    System.out.print("Spieler 1, Kämpfer 1, Waffe 1, Name: ");
-    nameOfWeapon1 = myScanner.next();
-    System.out.print("Spieler 1, Kämpfer 1, Waffe 1, AW: ");
-    avOfWeapon1 = myScanner.nextInt();
-
+    System.out.println();
     System.out.print("Spieler 2, Name: ");
     nameOfPlayer2 = myScanner.next();
     System.out.print("Spieler 2, Kämpfer 1, Name: ");
     nameOfFighter2 = myScanner.next();
     System.out.print("Spieler 2, Kämpfer 1, LP: ");
     hpOfFighter2 = myScanner.nextInt();
-    System.out.print("Spieler 2, Kämpfer 1, VW: ");
-    dvOfFighter2 = myScanner.nextInt();
-    System.out.print("Spieler 2, Kämpfer 1, Waffe 1, Name: ");
-    nameOfWeapon2 = myScanner.next();
-    System.out.print("Spieler 2, Kämpfer 1, Waffe 1, AW: ");
-    avOfWeapon2 = myScanner.nextInt();
 
-    /* Spiel */
+    /* Spielablauf */
+    // Runde 1, Zug 1
     System.out.println();
-    System.out.println("Runde 1, Zug 1");
-    System.out.println(nameOfFighter1 + ": " + hpOfFighter1 + " LP");
-    System.out.println(nameOfFighter2 + ": " + hpOfFighter2 + " LP");
+    System.out.println("*----------------*");
+    System.out.println("* Runde 1, Zug 1 *");
+    System.out.println("*----------------*");
+    System.out.println(
+        "Kämpfer von " + nameOfPlayer1 + ": " + nameOfFighter1 + " (" + hpOfFighter1 + " LP)");
+    System.out.println(
+        "Kämpfer von " + nameOfPlayer2 + ": " + nameOfFighter2 + " (" + hpOfFighter2 + " LP)");
     System.out.println();
     valueOfDice1 = myRandom.nextInt(1, 7);
     valueOfDice2 = myRandom.nextInt(1, 7);
@@ -96,9 +81,15 @@ public class MainClass {
         nameOfFighter2 + " erleidet " + damage + " Schaden und hat noch " + hpOfFighter2 + " LP");
     System.out.println();
 
-    System.out.println("Runde 1, Zug 2");
-    System.out.println(nameOfFighter1 + ": " + hpOfFighter1 + " LP");
-    System.out.println(nameOfFighter2 + ": " + hpOfFighter2 + " LP");
+    // Runde 1, Zug 2
+    System.out.println();
+    System.out.println("*----------------*");
+    System.out.println("* Runde 1, Zug 2 *");
+    System.out.println("*----------------*");
+    System.out.println(
+        "Kämpfer von " + nameOfPlayer1 + ": " + nameOfFighter1 + " (" + hpOfFighter1 + " LP)");
+    System.out.println(
+        "Kämpfer von " + nameOfPlayer2 + ": " + nameOfFighter2 + " (" + hpOfFighter2 + " LP)");
     System.out.println();
     valueOfDice1 = myRandom.nextInt(1, 7);
     valueOfDice2 = myRandom.nextInt(1, 7);
