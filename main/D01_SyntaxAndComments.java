@@ -1,7 +1,7 @@
 package main;
 
 /**
- * Demo 1: Syntax and Comments
+ * Syntax and Comments
  *
  * @author Daniel Appenmaier
  * @version 1.0

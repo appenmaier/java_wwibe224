@@ -4,7 +4,7 @@ import util.Calculator;
 import util.Printer;
 
 /**
- * Demo 2: Static Methods
+ * Static Methods
  *
  * @author Daniel Appenmaier
  * @version 1.0

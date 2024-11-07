@@ -1,7 +1,7 @@
 package main;
 
 /**
- * Demo 0: Hello World
+ * Hello World
  *
  * @author Daniel Appenmaier
  * @version 1.0
