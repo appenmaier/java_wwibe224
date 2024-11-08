@@ -31,6 +31,27 @@ public class D12_Cases {
     }
     System.out.println("Deine Farbe ist " + colorText);
 
+    /* klassisches switch/case */
+    switch (color) {
+      case 'r':
+      case 'R':
+        colorText = "rot";
+        break;
+      case 'g':
+      case 'G':
+        colorText = "grün";
+        break;
+      case 'b':
+      case 'B':
+        colorText = "blau";
+        break;
+      default:
+        colorText = "undefined";
+        break;
+    }
+    System.out.println("Deine Farbe ist " + colorText);
+
+    /* switch/case-Ausdrücke */
     colorText = switch (color) {
       case 'r', 'R' -> "rot";
       case 'g', 'G' -> "grün";
