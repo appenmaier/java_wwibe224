@@ -9,9 +9,17 @@ package model;
  */
 public class TableLight {
 
-  public boolean isConnected;
-  public boolean isOn;
-  public LightBulb lightBulb;
+  private boolean isConnected;
+  private boolean isOn;
+  private LightBulb lightBulb;
+
+  public TableLight() {
+    lightBulb = new LightBulb();
+  }
+
+  public TableLight(LightBulb lightBulb) {
+    this.lightBulb = lightBulb;
+  }
 
   /**
    * Changes the old Light Bulb with a new one
@@ -23,6 +31,18 @@ public class TableLight {
     LightBulb oldLightBulb = lightBulb;
     lightBulb = newLightBulb;
     return oldLightBulb;
+  }
+
+  public LightBulb getLightBulb() {
+    return lightBulb;
+  }
+
+  public boolean isConnected() {
+    return isConnected;
+  }
+
+  public boolean isOn() {
+    return isOn;
   }
 
   /**

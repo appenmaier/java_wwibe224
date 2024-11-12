@@ -19,8 +19,7 @@ public class D19_ReferencesAndObjects {
 
     i = 5;
     light1 = new TableLight();
-    LightBulb red = new LightBulb();
-    red.color = "rot";
+    LightBulb red = new LightBulb("rot");
     light1.changeLightBulb(red);
 
     int x;
