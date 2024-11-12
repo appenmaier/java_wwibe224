@@ -19,8 +19,17 @@ public class LightBulb {
     this.color = color;
   }
 
+  public boolean equals(LightBulb other) {
+    return color.equals(other.color);
+  }
+
   public String getColor() {
     return color;
+  }
+
+  @Override
+  public String toString() {
+    return "LightBulb [color=" + color + "]";
   }
 
 }
