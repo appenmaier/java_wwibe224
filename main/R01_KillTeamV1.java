@@ -15,10 +15,10 @@ public class R01_KillTeamV1 {
   @SuppressWarnings({"resource", "unused"})
   public static void main(String[] args) {
 
+    /* Datenobjekte */
     Scanner myScanner = new Scanner(System.in);
     Random myRandom = new Random();
 
-    /* Datenobjekte */
     // Spieler
     String nameOfPlayer1;
     String nameOfPlayer2;
@@ -38,8 +38,6 @@ public class R01_KillTeamV1 {
     int valueOfDice6;
     int valueOfDice7;
     int valueOfDice8;
-    int valueOfDice9;
-    int valueOfDice10;
 
     /* Wertzuweisungen */
     System.out.print("Spieler 1, Name eingeben: ");

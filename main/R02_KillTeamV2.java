@@ -13,10 +13,10 @@ public class R02_KillTeamV2 {
 
   public static void main(String[] args) {
 
+    /* Datenobjekte */
     int round = 0;
     Random myRandom = new Random();
 
-    /* Datenobjekte */
     // Spieler
     String nameOfPlayer1 = "Hans";
     String nameOfPlayer2 = "Peter";
