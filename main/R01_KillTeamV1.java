@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class R01_KillTeamV1 {
 
-  @SuppressWarnings({"resource", "unused"})
+  @SuppressWarnings({"resource"})
   public static void main(String[] args) {
 
     /* Datenobjekte */
@@ -30,14 +30,14 @@ public class R01_KillTeamV1 {
     int healthPointsOfFighter2;
 
     // Würfel
-    int valueOfDice1;
-    int valueOfDice2;
-    int valueOfDice3;
-    int valueOfDice4;
-    int valueOfDice5;
-    int valueOfDice6;
-    int valueOfDice7;
-    int valueOfDice8;
+    int diceValue1;
+    int diceValue2;
+    int diceValue3;
+    int diceValue4;
+    int diceValue5;
+    int diceValue6;
+    int diceValue7;
+    int diceValue8;
 
     /* Wertzuweisungen */
     System.out.print("Spieler 1, Name eingeben: ");
@@ -68,22 +68,22 @@ public class R01_KillTeamV1 {
     System.out.println(nameOfFighter1 + " greift " + nameOfFighter2 + " an.");
 
     // Zug 1- Treffer
-    valueOfDice1 = myRandom.nextInt(1, 7);
-    valueOfDice2 = myRandom.nextInt(1, 7);
-    valueOfDice3 = myRandom.nextInt(1, 7);
-    valueOfDice4 = myRandom.nextInt(1, 7);
-    System.out.println(nameOfFighter1 + " würfelt " + valueOfDice1 + ", " + valueOfDice2 + ", "
-        + valueOfDice3 + " und " + valueOfDice4 + ".");
-    int totalHits = valueOfDice1 + valueOfDice2 + valueOfDice3 + valueOfDice4;
+    diceValue1 = myRandom.nextInt(1, 7);
+    diceValue2 = myRandom.nextInt(1, 7);
+    diceValue3 = myRandom.nextInt(1, 7);
+    diceValue4 = myRandom.nextInt(1, 7);
+    System.out.println(nameOfFighter1 + " würfelt " + diceValue1 + ", " + diceValue2 + ", "
+        + diceValue3 + " und " + diceValue4 + ".");
+    int totalHits = diceValue1 + diceValue2 + diceValue3 + diceValue4;
     System.out.println(nameOfFighter1 + " erzielt " + totalHits + " Treffer.");
 
     // Zug 1 - Blocks
-    valueOfDice5 = myRandom.nextInt(1, 7);
-    valueOfDice6 = myRandom.nextInt(1, 7);
-    valueOfDice7 = myRandom.nextInt(1, 7);
-    int totalBlocks = valueOfDice5 + valueOfDice6 + valueOfDice7;
-    System.out.println(nameOfFighter2 + " würfelt " + valueOfDice5 + ", " + valueOfDice6 + " und "
-        + valueOfDice7 + ".");
+    diceValue5 = myRandom.nextInt(1, 7);
+    diceValue6 = myRandom.nextInt(1, 7);
+    diceValue7 = myRandom.nextInt(1, 7);
+    int totalBlocks = diceValue5 + diceValue6 + diceValue7;
+    System.out.println(nameOfFighter2 + " würfelt " + diceValue5 + ", " + diceValue6 + " und "
+        + diceValue7 + ".");
     System.out.println(nameOfFighter2 + " erzielt " + totalBlocks + " Blocks.");
 
     // Zug 1 - Schaden
@@ -106,22 +106,22 @@ public class R01_KillTeamV1 {
     System.out.println(nameOfFighter2 + " greift " + nameOfFighter1 + " an.");
 
     // Zug 2 - Treffer
-    valueOfDice1 = myRandom.nextInt(1, 7);
-    valueOfDice2 = myRandom.nextInt(1, 7);
-    valueOfDice3 = myRandom.nextInt(1, 7);
-    valueOfDice4 = myRandom.nextInt(1, 7);
-    System.out.println(nameOfFighter2 + " würfelt " + valueOfDice1 + ", " + valueOfDice2 + ", "
-        + valueOfDice3 + " und " + valueOfDice4 + ".");
-    totalHits = valueOfDice1 + valueOfDice2 + valueOfDice3 + valueOfDice4;
+    diceValue5 = myRandom.nextInt(1, 7);
+    diceValue6 = myRandom.nextInt(1, 7);
+    diceValue7 = myRandom.nextInt(1, 7);
+    diceValue8 = myRandom.nextInt(1, 7);
+    System.out.println(nameOfFighter2 + " würfelt " + diceValue5 + ", " + diceValue6 + ", "
+        + diceValue7 + " und " + diceValue8 + ".");
+    totalHits = diceValue5 + diceValue6 + diceValue7 + diceValue8;
     System.out.println(nameOfFighter2 + " erzielt " + totalHits + " Treffer.");
 
     // Zug 2 - Blocks
-    valueOfDice5 = myRandom.nextInt(1, 7);
-    valueOfDice6 = myRandom.nextInt(1, 7);
-    valueOfDice7 = myRandom.nextInt(1, 7);
-    totalBlocks = valueOfDice5 + valueOfDice6 + valueOfDice7;
-    System.out.println(nameOfFighter1 + " würfelt " + valueOfDice5 + ", " + valueOfDice6 + " und "
-        + valueOfDice7 + ".");
+    diceValue1 = myRandom.nextInt(1, 7);
+    diceValue2 = myRandom.nextInt(1, 7);
+    diceValue3 = myRandom.nextInt(1, 7);
+    totalBlocks = diceValue1 + diceValue2 + diceValue3;
+    System.out.println(nameOfFighter1 + " würfelt " + diceValue1 + ", " + diceValue2 + " und "
+        + diceValue3 + ".");
     System.out.println(nameOfFighter1 + " erzielt " + totalBlocks + " Blocks.");
 
     // Zug 2 - Schaden
