@@ -66,7 +66,13 @@ public class R02_KillTeamV2 {
       String output = nameOfFighter1 + " würfelt ";
       for (int i = 0; i < attackValueOfWeapon1; i++) {
         diceValuesOfPlayer1[i] = myRandom.nextInt(1, 7);
-        output += diceValuesOfPlayer1[i] + ", ";
+        if (i == attackValueOfWeapon1 - 2) {
+          output += diceValuesOfPlayer1[i] + " und ";
+        } else if (i == attackValueOfWeapon1 - 1) {
+          output += diceValuesOfPlayer1[i] + ".";
+        } else {
+          output += diceValuesOfPlayer1[i] + ", ";
+        }
         if (diceValuesOfPlayer1[i] >= skillOfWeapon1) {
           totalHits++;
         }
@@ -81,7 +87,13 @@ public class R02_KillTeamV2 {
       output = nameOfFighter2 + " würfelt ";
       for (int i = 0; i < defenseValueOfFighter2; i++) {
         diceValuesOfPlayer2[i] = myRandom.nextInt(1, 7);
-        output += diceValuesOfPlayer2[i] + ", ";
+        if (i == defenseValueOfFighter2 - 2) {
+          output += diceValuesOfPlayer2[i] + " und ";
+        } else if (i == defenseValueOfFighter2 - 1) {
+          output += diceValuesOfPlayer2[i] + ".";
+        } else {
+          output += diceValuesOfPlayer2[i] + ", ";
+        }
         if (diceValuesOfPlayer2[i] >= armorRollOfFighter2) {
           totalBlocks++;
         }
@@ -126,7 +138,13 @@ public class R02_KillTeamV2 {
       output = nameOfFighter2 + " würfelt ";
       for (int i = 0; i < attackValueOfWeapon2; i++) {
         diceValuesOfPlayer2[i] = myRandom.nextInt(1, 7);
-        output += diceValuesOfPlayer2[i] + ", ";
+        if (i == attackValueOfWeapon2 - 2) {
+          output += diceValuesOfPlayer2[i] + " und ";
+        } else if (i == attackValueOfWeapon2 - 1) {
+          output += diceValuesOfPlayer2[i] + ".";
+        } else {
+          output += diceValuesOfPlayer2[i] + ", ";
+        }
         if (diceValuesOfPlayer2[i] >= skillOfWeapon2) {
           totalHits++;
         }
@@ -141,7 +159,13 @@ public class R02_KillTeamV2 {
       output = nameOfFighter1 + " würfelt ";
       for (int i = 0; i < defenseValueOfFighter1; i++) {
         diceValuesOfPlayer1[i] = myRandom.nextInt(1, 7);
-        output += diceValuesOfPlayer1[i] + ", ";
+        if (i == defenseValueOfFighter1 - 2) {
+          output += diceValuesOfPlayer1[i] + " und ";
+        } else if (i == defenseValueOfFighter1 - 1) {
+          output += diceValuesOfPlayer1[i] + ".";
+        } else {
+          output += diceValuesOfPlayer1[i] + ", ";
+        }
         if (diceValuesOfPlayer1[i] >= armorRollOfFighter1) {
           totalBlocks++;
         }
