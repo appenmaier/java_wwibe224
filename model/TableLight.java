@@ -9,16 +9,26 @@ package model;
  */
 public class TableLight {
 
+  public final static String DESCRIPTION = "Tischleuchte";
+  private static int numberOfDices;
+
+  public static int getNumberOfDices() {
+    return numberOfDices;
+  }
+
   private boolean isConnected;
   private boolean isOn;
+
   private LightBulb lightBulb;
 
   public TableLight() {
     lightBulb = new LightBulb();
+    numberOfDices++;
   }
 
   public TableLight(LightBulb lightBulb) {
     this.lightBulb = lightBulb;
+    numberOfDices++;
   }
 
   /**
