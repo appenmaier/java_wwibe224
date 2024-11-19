@@ -18,15 +18,24 @@ public class TableLight {
 
   private boolean isConnected;
   private boolean isOn;
+  private final PlugType plugType;
 
   private LightBulb lightBulb;
 
   public TableLight() {
+    plugType = PlugType.TYPE_F;
     lightBulb = new LightBulb();
     numberOfDices++;
   }
 
   public TableLight(LightBulb lightBulb) {
+    plugType = PlugType.TYPE_F;
+    this.lightBulb = lightBulb;
+    numberOfDices++;
+  }
+
+  public TableLight(LightBulb lightBulb, PlugType plugType) {
+    this.plugType = plugType;
     this.lightBulb = lightBulb;
     numberOfDices++;
   }
@@ -45,6 +54,10 @@ public class TableLight {
 
   public LightBulb getLightBulb() {
     return lightBulb;
+  }
+
+  public PlugType getPlugType() {
+    return plugType;
   }
 
   public boolean isConnected() {
