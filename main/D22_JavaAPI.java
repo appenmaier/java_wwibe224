@@ -33,6 +33,9 @@ public class D22_JavaAPI {
     System.out.println(dateAndTime.format(DateTimeFormatter.ISO_WEEK_DATE));
     System.out.println(myBirthday.getDayOfWeek());
 
+    long now = System.currentTimeMillis();
+    System.out.println(now);
+
     /* Wrapper-Klassen */
     String numberText = "42";
     int number = Integer.valueOf(numberText);
