@@ -7,7 +7,7 @@ package model;
  * @version 1.0
  *
  */
-public class TableLight {
+public class TableLight extends Light {
 
   public final static String DESCRIPTION = "Tischleuchte";
   private static int numberOfDices;
@@ -17,9 +17,7 @@ public class TableLight {
   }
 
   private boolean isConnected;
-  private boolean isOn;
   private final PlugType plugType;
-
   private LightBulb lightBulb;
 
   public TableLight() {
@@ -64,15 +62,12 @@ public class TableLight {
     return isConnected;
   }
 
-  public boolean isOn() {
-    return isOn;
-  }
-
   /**
    * Returns if the Table Light is shining or not
    *
    * @return Table Light is shining (true) or not (false)
    */
+  @Override
   public boolean isShining() {
     if (isConnected && isOn && lightBulb != null) {
       return true;
@@ -93,20 +88,6 @@ public class TableLight {
    */
   public void pullThePlug() {
     isConnected = false;
-  }
-
-  /**
-   * Switches the Table Light off
-   */
-  public void switchOff() {
-    isOn = false;
-  }
-
-  /**
-   * Switches the Table Light on
-   */
-  public void switchOn() {
-    isOn = true;
   }
 
 }
