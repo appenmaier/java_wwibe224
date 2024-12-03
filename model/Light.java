@@ -7,7 +7,7 @@ package model;
  * @version 1.0
  *
  */
-public class Light {
+public abstract class Light {
 
   protected boolean isOn;
 
@@ -15,15 +15,9 @@ public class Light {
     return isOn;
   }
 
-  public boolean isShining() {
-    if (isOn) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  public abstract boolean isShining();
 
-  public void switchOff() {
+  public final void switchOff() {
     isOn = false;
   }
 

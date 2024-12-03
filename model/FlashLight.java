@@ -7,7 +7,7 @@ package model;
  * @version 1.0
  *
  */
-public class FlashLight extends Light {
+public final class FlashLight extends Light {
 
   private double energyLevel;
 

@@ -7,7 +7,7 @@ package model;
  * @version 1.0
  *
  */
-public class TableLight extends Light {
+public final class TableLight extends Light implements WiredDevice {
 
   public final static String DESCRIPTION = "Tischleuchte";
   private static int numberOfDices;
@@ -79,6 +79,7 @@ public class TableLight extends Light {
   /**
    * Plugs the Table Light in
    */
+  @Override
   public void plugIn() {
     isConnected = true;
   }
@@ -86,6 +87,7 @@ public class TableLight extends Light {
   /**
    * Pulls the Plug of the Table Light
    */
+  @Override
   public void pullThePlug() {
     isConnected = false;
   }

@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 /**
  * Vehicle
  *
@@ -22,6 +24,22 @@ public class Vehicle {
     speedInKmh += valueInKmh;
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null) {
+      return false;
+    }
+    if (getClass() != obj.getClass()) {
+      return false;
+    }
+    Vehicle other = (Vehicle) obj;
+    return Objects.equals(make, other.make) && Objects.equals(model, other.model)
+        && Double.doubleToLongBits(speedInKmh) == Double.doubleToLongBits(other.speedInKmh);
+  }
+
   public String getMake() {
     return make;
   }
@@ -32,6 +50,11 @@ public class Vehicle {
 
   public double getSpeedInKmh() {
     return speedInKmh;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(make, model, speedInKmh);
   }
 
   @Override
