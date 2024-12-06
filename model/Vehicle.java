@@ -9,7 +9,7 @@ import java.util.Objects;
  * @version 1.0
  *
  */
-public class Vehicle {
+public abstract class Vehicle {
 
   private final String make;
   private final String model;
@@ -20,7 +20,7 @@ public class Vehicle {
     this.model = model;
   }
 
-  public void accelerate(double valueInKmh) {
+  public final void accelerate(double valueInKmh) {
     speedInKmh += valueInKmh;
   }
 
@@ -58,8 +58,6 @@ public class Vehicle {
   }
 
   @Override
-  public String toString() {
-    return "Vehicle [make=" + make + ", model=" + model + ", speedInKmh=" + speedInKmh + "]";
-  }
+  public abstract String toString();
 
 }

@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Rental
@@ -9,10 +10,10 @@ import java.util.ArrayList;
  * @version 1.0
  *
  */
-public class Rental {
+public class Rental implements Partner {
 
   private final String name;
-  private final ArrayList<Vehicle> vehicles;
+  private final List<Vehicle> vehicles;
 
   public Rental(String name) {
     this.name = name;
@@ -27,7 +28,7 @@ public class Rental {
     return name;
   }
 
-  public ArrayList<Vehicle> getVehicles() {
+  public List<Vehicle> getVehicles() {
     return vehicles;
   }
 

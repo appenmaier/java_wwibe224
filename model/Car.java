@@ -7,7 +7,7 @@ package model;
  * @version 1.0
  *
  */
-public class Car extends Vehicle {
+public final class Car extends Vehicle {
 
   private final int seats;
 
