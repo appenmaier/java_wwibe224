@@ -9,25 +9,25 @@ package model;
  */
 public final class Car extends Vehicle {
 
-  private final int seats;
+   private final int seats;
 
-  public Car(String make, String model, int seats) {
-    super(make, model);
-    this.seats = seats;
-  }
+   public Car(String make, String model, int seats) {
+      super(make, model);
+      this.seats = seats;
+   }
 
-  public void doATurboBoost() {
-    speedInKmh *= 2;
-  }
+   public void doATurboBoost() {
+      speedInKmh *= 2;
+   }
 
-  public int getSeats() {
-    return seats;
-  }
+   public int getSeats() {
+      return seats;
+   }
 
-  @Override
-  public String toString() {
-    return "Car [seats=" + seats + ", make=" + getMake() + ", model=" + getModel() + ", speedInKmh="
-        + getSpeedInKmh() + "]";
-  }
+   @Override
+   public String toString() {
+      return "Car [seats=" + seats + ", make=" + getMake() + ", model=" + getModel()
+            + ", speedInKmh=" + getSpeedInKmh() + "]";
+   }
 
 }

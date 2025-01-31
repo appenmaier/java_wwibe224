@@ -9,7 +9,7 @@ package model;
  */
 public interface Partner {
 
-  @Override
-  String toString();
+   @Override
+   String toString();
 
 }

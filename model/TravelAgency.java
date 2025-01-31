@@ -12,29 +12,29 @@ import java.util.List;
  */
 public class TravelAgency {
 
-  private final String name;
-  private final List<Partner> partners;
+   private final String name;
+   private final List<Partner> partners;
 
-  public TravelAgency(String name) {
-    this.name = name;
-    partners = new ArrayList<>();
-  }
+   public TravelAgency(String name) {
+      this.name = name;
+      partners = new ArrayList<>();
+   }
 
-  public void addPartner(Partner partner) {
-    partners.add(partner);
-  }
+   public void addPartner(Partner partner) {
+      partners.add(partner);
+   }
 
-  public String getName() {
-    return name;
-  }
+   public String getName() {
+      return name;
+   }
 
-  public List<Partner> getPartners() {
-    return partners;
-  }
+   public List<Partner> getPartners() {
+      return partners;
+   }
 
-  @Override
-  public String toString() {
-    return "TravelAgency [name=" + name + ", partners=" + partners + "]";
-  }
+   @Override
+   public String toString() {
+      return "TravelAgency [name=" + name + ", partners=" + partners + "]";
+   }
 
 }

@@ -9,8 +9,8 @@ package model;
  */
 public interface WiredDevice {
 
-  void plugIn();
+   void plugIn();
 
-  void pullThePlug();
+   void pullThePlug();
 
 }

@@ -11,19 +11,19 @@ import java.util.Random;
  */
 public class D6Dice {
 
-  private int value;
+   private int value;
 
-  public D6Dice() {
-    value = 6;
-  }
+   public D6Dice() {
+      value = 6;
+   }
 
-  public int getValue() {
-    return value;
-  }
+   public int getValue() {
+      return value;
+   }
 
-  public void rollTheDice() {
-    Random random = new Random();
-    value = random.nextInt(1, 7);
-  }
+   public void rollTheDice() {
+      Random random = new Random();
+      value = random.nextInt(1, 7);
+   }
 
 }

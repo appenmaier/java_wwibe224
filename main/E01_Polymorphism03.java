@@ -14,26 +14,24 @@ import model.Vehicle;
  */
 public class E01_Polymorphism03 {
 
-  public static void main(String[] args) {
+   public static void main(String[] args) {
+      Rental rental = new Rental("Sixxt");
 
-    Rental rental = new Rental("Sixxt");
+      Vehicle v1 = new Car("Audi", "A4", 5); // Upcast
+      Vehicle v2 = new Truck("MAN", "TGX"); // Upcast
+      Vehicle v3 = new Car("Porsche", "911", 2); // Upcast
+      Vehicle v4 = new Truck("Mercedes", "LKW"); // Upcast
 
-    Vehicle v1 = new Car("Audi", "A4", 5); // Upcast
-    Vehicle v2 = new Truck("MAN", "TGX"); // Upcast
-    Vehicle v3 = new Car("Porsche", "911", 2); // Upcast
-    Vehicle v4 = new Truck("Mercedes", "LKW"); // Upcast
+      rental.addVehicle(v1);
+      rental.addVehicle(v2);
+      rental.addVehicle(v3);
+      rental.addVehicle(v4);
 
-    rental.addVehicle(v1);
-    rental.addVehicle(v2);
-    rental.addVehicle(v3);
-    rental.addVehicle(v4);
+      System.out.println(rental); // Polymorphie
 
-    System.out.println(rental); // Polymorphie
+      rental.transformAllTrucks();
 
-    rental.transformAllTrucks();
-
-    System.out.println(rental); // Polymorphie
-
-  }
+      System.out.println(rental); // Polymorphie
+   }
 
 }

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import model.WeekDay;
 
 /**
@@ -16,23 +17,19 @@ import model.WeekDay;
  */
 public class P02_FileScanner {
 
-  public static void main(String[] args) throws FileNotFoundException {
+   public static void main(String[] args) throws FileNotFoundException {
+      File file = new File("resources/weekdays.txt");
 
-    File file = new File("resources/weekdays.txt");
+      List<WeekDay> weekdays = new ArrayList<>();
+      Scanner scanner = new Scanner(file);
+      while (scanner.hasNextLine()) {
+         String line = scanner.nextLine();
+         WeekDay weekday = WeekDay.valueOf(line);
+         weekdays.add(weekday);
+      }
+      scanner.close();
 
-    List<WeekDay> weekdays = new ArrayList<>();
-    Scanner scanner = new Scanner(file);
-
-    while (scanner.hasNextLine()) {
-      String line = scanner.nextLine();
-      WeekDay weekday = WeekDay.valueOf(line);
-      weekdays.add(weekday);
-    }
-
-    scanner.close();
-
-    System.out.println(weekdays);
-
-  }
+      System.out.println(weekdays);
+   }
 
 }

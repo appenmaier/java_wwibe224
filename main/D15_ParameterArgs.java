@@ -9,12 +9,10 @@ package main;
  */
 public class D15_ParameterArgs {
 
-  public static void main(String[] args) {
-
-    for (int i = 0; i < args.length; i++) {
-      System.out.println(args[i]);
-    }
-
-  }
+   public static void main(String[] args) {
+      for (int i = 0; i < args.length; i++) {
+         System.out.println(args[i]);
+      }
+   }
 
 }

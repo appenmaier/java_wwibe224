@@ -11,40 +11,38 @@ import java.util.ArrayList;
  */
 public class D17_ArrayList {
 
-  public static void main(String[] args) {
+   public static void main(String[] args) {
+      // String[] names = new String[10];
+      // for (int i = 0; i < names.length; i++) {
+      // if (names[i] == null) {
+      // names[i] == "Hans";
+      // break;
+      // }
+      // }
 
-    // String[] names = new String[10];
-    // for (int i = 0; i < names.length; i++) {
-    // if (names[i] == null) {
-    // names[i] == "Hans";
-    // break;
-    // }
-    // }
+      /* Deklaration */
+      ArrayList<String> names = new ArrayList<>();
 
-    /* Deklaration */
-    ArrayList<String> names = new ArrayList<>();
+      /* Elemente anfügen */
+      names.add("Hans");
+      names.add("Peter");
+      names.add("Lisa");
 
-    /* Elemente anfügen */
-    names.add("Hans");
-    names.add("Peter");
-    names.add("Lisa");
+      /* Elemente einfügen */
+      names.add(1, "Max");
 
-    /* Elemente einfügen */
-    names.add(1, "Max");
+      /* Element löschen */
+      names.remove(2);
 
-    /* Element löschen */
-    names.remove(2);
+      /* Elemente auslesen */
+      String firstName = names.get(0);
+      System.out.println(firstName);
 
-    /* Elemente auslesen */
-    String firstName = names.get(0);
-    System.out.println(firstName);
+      /* Anzahl Elemente ausgeben */
+      System.out.println(names.size());
 
-    /* Anzahl Elemente ausgeben */
-    System.out.println(names.size());
-
-    /* Liste ausgeben */
-    System.out.println(names);
-
-  }
+      /* Liste ausgeben */
+      System.out.println(names);
+   }
 
 }

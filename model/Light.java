@@ -9,20 +9,20 @@ package model;
  */
 public abstract class Light {
 
-  protected boolean isOn;
+   protected boolean isOn;
 
-  public boolean isOn() {
-    return isOn;
-  }
+   public boolean isOn() {
+      return isOn;
+   }
 
-  public abstract boolean isShining();
+   public abstract boolean isShining();
 
-  public final void switchOff() {
-    isOn = false;
-  }
+   public final void switchOff() {
+      isOn = false;
+   }
 
-  public void switchOn() {
-    isOn = true;
-  }
+   public void switchOn() {
+      isOn = true;
+   }
 
 }
