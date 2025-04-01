@@ -1,16 +1,17 @@
-# Ignore
+# Ignore all
 *
-/bin/*
-/target/*
 
-# Do not ignore
+# Do not ignore Java relevant files
 !.gitignore
 !*.java
 !*.md
-!*.mdx
 !*.txt
 !*.csv
 !*.png
 !*.xml
 !*.fxml
 !*/
+
+# Ignore not relevant folders
+/bin/
+/target/
