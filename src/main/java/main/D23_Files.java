@@ -19,8 +19,8 @@ public class D23_Files {
    public static void main(String[] args) throws FileNotFoundException {
       ArrayList<Person> persons = new ArrayList<>();
 
-      // String path = "C:\\Users\\D054906\\git\\java_wwibe224\\resources\\persons.txt";
-      String path = "resources/persons.txt";
+      // String path = "C:\\Users\\D054906\\git\\java_wwibe224\\src\\main\\resources\\persons.txt";
+      String path = "src/main/resources/persons.txt";
       File file = new File(path);
       Scanner scanner = new Scanner(file);
       while (scanner.hasNextLine()) {

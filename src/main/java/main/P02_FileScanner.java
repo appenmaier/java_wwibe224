@@ -18,7 +18,7 @@ import model.WeekDay;
 public class P02_FileScanner {
 
    public static void main(String[] args) throws FileNotFoundException {
-      File file = new File("resources/weekdays.txt");
+      File file = new File("src/main/resources/weekdays.txt");
 
       List<WeekDay> weekdays = new ArrayList<>();
       Scanner scanner = new Scanner(file);
