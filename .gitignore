@@ -1,7 +1,7 @@
 # Ignore
 *
-/bin/
-/target/
+/bin/*
+/target/*
 
 # Do not ignore
 !.gitignore
