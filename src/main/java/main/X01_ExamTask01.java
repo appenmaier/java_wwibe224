@@ -5,9 +5,16 @@ import java.io.FileNotFoundException;
 
 import model.MeasurementValue;
 import model.Sensor;
-import model.ValueHelper;
 import model.WeatherStation;
+import util.ValueHelper;
 
+/**
+ * Exam Task 1 (Weather Station)
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public class X01_ExamTask01 {
 
    public static void main(String[] args) throws FileNotFoundException {

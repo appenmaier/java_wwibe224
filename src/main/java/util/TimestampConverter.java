@@ -1,7 +1,14 @@
-package model;
+package util;
 
 import java.time.LocalDate;
 
+/**
+ * Timestamp Converter
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public class TimestampConverter {
 
    private static int year;

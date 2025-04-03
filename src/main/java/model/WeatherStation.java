@@ -3,6 +3,13 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Weather Station
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public class WeatherStation {
 
    private final int id;

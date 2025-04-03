@@ -1,4 +1,4 @@
-package model;
+package util;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,6 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import model.MeasurementValue;
+import model.Sensor;
+
+/**
+ * Measurement Value Helper
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public class ValueHelper {
 
    public static List<MeasurementValue> getValues(File file) throws FileNotFoundException {

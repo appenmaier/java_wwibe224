@@ -1,5 +1,12 @@
 package model;
 
+/**
+ * Sensor
+ *
+ * @author Daniel Appenmaier
+ * @version 1.0
+ *
+ */
 public enum Sensor {
 
    TEMPERATURE("Temperature", "°C"), HUMIDITY("Luftfeuchtigkeit", "%");
