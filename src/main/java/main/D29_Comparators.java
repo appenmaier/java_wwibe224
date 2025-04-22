@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import model.Genre;
 import model.Movie;
 import model.MovieByRatingDescendingComparator;
 
@@ -12,7 +11,7 @@ import model.MovieByRatingDescendingComparator;
  * Comparators
  *
  * @author Daniel Appenmaier
- * @version 1.0
+ * @version 2.0
  *
  */
 public class D29_Comparators {
@@ -35,24 +34,13 @@ public class D29_Comparators {
       System.out.println(names);
 
       List<Movie> movies = new ArrayList<>();
-      movies.add(new Movie("John Wick 4",
-            List.of(Genre.ACTION, Genre.CRIME, Genre.THRILLER),
-            "2023",
-            169,
-            7.8,
-            241552));
-      movies.add(new Movie("Disaster Movie",
-            List.of(Genre.COMEDY, Genre.SCIENCE_FICTION),
-            "2008",
-            87,
-            2.1,
-            93334));
-      movies.add(new Movie("The Super Mario Bros. Movie",
-            List.of(Genre.ANIMATION, Genre.ADVENTURE, Genre.COMEDY),
-            "2023",
-            92,
-            7.1,
-            161146));
+      /*
+       * version 1.0: movies.add(new Movie("John Wick 4", List.of(Genre.ACTION, Genre.CRIME,
+       * Genre.THRILLER), "2023", 169, 7.8, 241552)); movies.add(new Movie("Disaster Movie",
+       * List.of(Genre.COMEDY, Genre.SCIENCE_FICTION), "2008", 87, 2.1, 93334)); movies.add(new
+       * Movie("The Super Mario Bros. Movie", List.of(Genre.ANIMATION, Genre.ADVENTURE,
+       * Genre.COMEDY), "2023", 92, 7.1, 161146));
+       */
       System.out.println(movies);
       Collections.sort(movies);
       System.out.println(movies);

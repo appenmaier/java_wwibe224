@@ -20,7 +20,17 @@ public class Movie implements Comparable<Movie> {
    private final int votes;
 
    public Movie(String title, List<Genre> genres, String year, int runtimeInMinutes, double rating,
-         int votes) {
+         int votes) throws InvalidValueException {
+      if (rating < 0 || rating > 10) {
+         throw new InvalidValueException("rating", rating);
+      }
+      if (runtimeInMinutes <= 0) {
+         throw new InvalidValueException("runtimeInMinutes", runtimeInMinutes);
+      }
+      if (votes < 0) {
+         throw new InvalidValueException("votes", votes);
+      }
+
       this.title = title;
       this.genres = genres;
       this.year = year;
