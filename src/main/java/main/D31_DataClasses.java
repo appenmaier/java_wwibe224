@@ -38,7 +38,7 @@ public class D31_DataClasses {
       System.out.println(fafnir3.age());
 
       /* Lombok */
-      DragonLombok fafnir5 = new DragonLombok("Fafnir", DragonType.EARTH, 500);
+      DragonLombok fafnir5 = new DragonLombok("Fafnir", DragonType.EARTH);
       DragonLombok fafnir6 = new DragonLombok("Fafnir", DragonType.EARTH, 500);
 
       System.out.println(fafnir5.equals(fafnir6));

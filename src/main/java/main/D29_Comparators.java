@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import model.Movie;
-import model.MovieByRatingDescendingComparator;
+import model.Movie.MovieByRatingDescendingComparator;
 
 /**
  * Comparators

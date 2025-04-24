@@ -2,6 +2,7 @@ package model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 /**
  * Dragon
@@ -11,6 +12,7 @@ import lombok.Data;
  *
  */
 @AllArgsConstructor
+@RequiredArgsConstructor
 @Data
 // @RequiredArgsConstructor
 // @Getter

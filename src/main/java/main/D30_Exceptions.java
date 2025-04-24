@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.Scanner;
 
 import model.FlashLight;
-import model.Genre;
 import model.InvalidValueException;
 import model.Light;
 import model.Movie;
+import model.Movies;
 import model.TableLight;
 
 /**
@@ -60,13 +60,8 @@ public class D30_Exceptions {
 
       /* InvalidRatingException */
       try {
-         Movie movie = new Movie("John Wick 4",
-               List.of(Genre.ACTION, Genre.CRIME, Genre.THRILLER),
-               "2023",
-               169,
-               1,
-               -1);
-         System.out.println(movie);
+         List<Movie> movies = Movies.getMovies();
+         System.out.println(movies);
       } catch (InvalidValueException e) {
          System.err.println(e.getMessage());
       } catch (NullPointerException | ArrayIndexOutOfBoundsException e) {
