@@ -70,10 +70,13 @@ public class D34_Maps {
       /* Probleme der TreeMap */
       studentsWithExam = new TreeMap<>(studentsWithExam);
 
-      System.out.println("1, Hans -> " + studentsWithExam.get(new Student("1", "Hans")));
-      System.out.println("2, Hans -> " + studentsWithExam.get(new Student("2", "Hans")));
-      System.out.println("3, Hans -> " + studentsWithExam.get(new Student("3", "Hans")));
-      System.out.println("4, Hans -> " + studentsWithExam.get(new Student("4", "Hans")));
+      studentsWithExam.put(new Student("4", "Hans"), new Exam("Mathe", 1.0));
+      System.out.println(studentsWithExam);
+      System.out.println("1, Hans: " + studentsWithExam.get(new Student("1", "Hans")));
+      System.out.println();
+
+      /* forEach-Methode */
+      studentsWithExam.forEach((s, e) -> System.out.println(s + " -> " + e));
    }
 
 }
