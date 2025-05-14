@@ -2,10 +2,14 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 import model.FastFood;
 import model.FastFoodCategory;
+import model.InvalidRatingException;
+import model.NoProductFoundException;
+import model.Shop;
 
 /**
  * Shop
@@ -30,6 +34,34 @@ public class X05_Shop {
       fastFood.forEach(System.out::println);
       Collections.sort(fastFood);
       fastFood.forEach(System.out::println);
+
+      Shop<FastFood> shop = new Shop<>("Burger King", new HashMap<>());
+
+      shop.addProduct(fastFood1);
+      shop.addProduct(fastFood2);
+      shop.addProduct(fastFood3);
+      shop.addProduct(fastFood1);
+
+      try {
+         shop.rateProduct(fastFood3, 4);
+         shop.rateProduct(fastFood3, 5);
+         shop.rateProduct(fastFood3, 3);
+         shop.rateProduct(fastFood1, 2);
+         // shop.rateProduct(new FastFood("Pizza", FastFoodCategory.PIZZA, 800, true), 5);
+         // shop.rateProduct(fastFood2, 6);
+         // shop.rateProduct(fastFood2, -1);
+      } catch (NoProductFoundException e) {
+         e.printStackTrace();
+      } catch (InvalidRatingException e) {
+         e.printStackTrace();
+      }
+
+      System.out.println("Sortiment");
+      shop.assortment().forEach((p, rs) -> System.out.println(p + ": " + rs));
+      System.out.println();
+      System.out.println(shop.getBestRatedProduct());
+      System.out.println();
+      shop.getAllProductsSortedByNaturalOrdering().forEach(System.out::println);
    }
 
 }
