@@ -1,5 +1,7 @@
 package model;
 
+import lombok.EqualsAndHashCode;
+
 /**
  * Person
  *
@@ -7,6 +9,7 @@ package model;
  * @version 1.0
  *
  */
+@EqualsAndHashCode
 public class Person {
 
    private final String name;
