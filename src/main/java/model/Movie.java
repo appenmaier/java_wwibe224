@@ -141,7 +141,23 @@ public class Movie implements Comparable<Movie> {
     */
    public static enum Genre {
 
-      ACTION, CRIME, THRILLER, SCIENCE_FICTION, ANIMATION, DRAMA, COMEDY, ADVENTURE
+      ACTION("Action"), ADVENTURE("Adventure"), ANIMATION("Animation"), BIOGRAPHY(
+            "Biography"), COMEDY("Comedy"), CRIME("Crime"), DOCUMENTARY("Documentary"), DRAMA(
+                  "Drama"), FAMILY("Family"), FANTASY("Fantasy"), FILM_NOIR("Film Noir"), HISTORY(
+                        "History"), HORROR("Horror"), MUSIC("Music"), MUSICAL("Musical"), MYSTERY(
+                              "Mystery"), NEWS("News"), ROMANCE("Romance"), SCIENCE_FICTION(
+                                    "Science Fiction"), SPORT("Sport"), THRILLER(
+                                          "Thriller"), WAR("War"), WESTERN("Western");
+
+      private final String description;
+
+      Genre(String description) {
+         this.description = description;
+      }
+
+      public String getDescription() {
+         return description;
+      }
 
    }
 
