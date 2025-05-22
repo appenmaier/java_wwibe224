@@ -3,6 +3,7 @@ package main;
 import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.stream.Collectors;
@@ -62,6 +63,24 @@ public class D37_JavaStreamApi {
 
       /* peek */
       getAllMovieTitlesWithRuntimeInMinutesLT90();
+      System.out.println();
+
+      /* Java Stream API bei Maps */
+      Map<String, List<Movie>> allMoviesByYear = getAllMoviesByYear();
+
+      OptionalDouble averageYear =
+            allMoviesByYear.keySet().stream().mapToInt(year -> Integer.valueOf(year)).average();
+      averageYear.ifPresent(System.out::println);
+
+      long numberOfYears =
+            allMoviesByYear.values().stream().filter(movies -> movies.size() > 2).count();
+      System.out.println(numberOfYears);
+
+      allMoviesByYear.entrySet()
+            .stream()
+            .filter(entry -> entry.getValue().size() > 2)
+            .map(Entry::getKey) // .map(entry -> entry.getKey())
+            .forEach(System.out::println);
    }
 
    private static List<String> getAllMovieTitlesWithRuntimeInMinutesLT90() {
