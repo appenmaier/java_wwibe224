@@ -4,7 +4,8 @@
 
 **Abbildung**
 
-TODO
+![image](https://github.com/user-attachments/assets/311e7e16-48c9-4c62-b267-a7f0f32ca582)
+![image](https://github.com/user-attachments/assets/0fab1d2d-3c68-4619-98f6-69672afa9390)
 
 **Links**
 
