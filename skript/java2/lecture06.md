@@ -13,7 +13,7 @@
 - [Klausuraufgaben](https://jappuccini.github.io/java-docs/production/exam-exercises/exam-exercises-java2/class-diagrams/)
 - [Demo](https://github.com/appenmaier/java_wwibe224/blob/main/src/main/java/main/D35_Optionals.java)
 
-## Wiederholung Vorlesung 1 - 5
+## Wiederholung Vorlesung 2 - 5
 
 **Link**
 
