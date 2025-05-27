@@ -8,7 +8,7 @@ Dieses Repo beinhaltet alle Demos des Kurses WWIBE224 zur Vorlesung [Programmier
 - [Vorlesung 2 (10. April 2025)](skript/java2/lecture02.md)
 - [Vorlesung 3 (22. April 2025)](skript/java2/lecture03.md)
 - [Vorlesung 4 (24. April 2025)](skript/java2/lecture04.md)
-- [Vorlesung 5 (1. Mai 2025)](skript/java2/lecture05.md)
+- [Vorlesung 5 (30. April 2025)](skript/java2/lecture05.md)
 - [Vorlesung 6 (8. Mai 2025)](skript/java2/lecture06.md)
 - [Vorlesung 7 (14. Mai 2025)](skript/java2/lecture07.md)
 - [Vorlesung 8 (19. Mai 2025)](skript/java2/lecture08.md)
