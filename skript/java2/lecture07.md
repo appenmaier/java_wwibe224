@@ -12,9 +12,6 @@ Klausuraufgabe [Shop: Klasse Shop](https://jappuccini.github.io/java-docs/produc
 
 ![image](https://github.com/user-attachments/assets/0dbfd641-d87a-4c8d-9514-f16fa2eec7aa)
 
-**Links**
+**Link**
 
-- [Doku](https://jappuccini.github.io/java-docs/production/documentation/java-stream-api)
-- [Übungsaufgaben](https://jappuccini.github.io/java-docs/production/exercises/java-stream-api/)
-- [Klausuraufgaben](https://jappuccini.github.io/java-docs/production/exam-exercises/exam-exercises-java2/queries/)
-- [Demo](https://github.com/appenmaier/java_wwibe224/blob/main/src/main/java/main/D36_JavaStreamApi.java)
+[Demo](https://github.com/appenmaier/java_wwibe224/blob/main/src/main/java/main/D36_JavaStreamApi.java)
