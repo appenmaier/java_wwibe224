@@ -4,13 +4,13 @@ Dieses Repo beinhaltet alle Demos des Kurses WWIBE224 zur Vorlesung [Programmier
 
 ## Skript Programmierung II
 
-- [Vorlesung 1 (2. April 2025)](skript/java2/lecture01.md)
-- [Vorlesung 2 (10. April 2025)](skript/java2/lecture02.md)
-- [Vorlesung 3 (22. April 2025)](skript/java2/lecture03.md)
-- [Vorlesung 4 (24. April 2025)](skript/java2/lecture04.md)
-- [Vorlesung 5 (30. April 2025)](skript/java2/lecture05.md)
-- [Vorlesung 6 (8. Mai 2025)](skript/java2/lecture06.md)
-- [Vorlesung 7 (14. Mai 2025)](skript/java2/lecture07.md)
-- [Vorlesung 8 (19. Mai 2025)](skript/java2/lecture08.md)
-- [Vorlesung 9 (22. Mai 2025)](skript/java2/lecture09.md)
-- [Vorlesung 10 (5. Juni 2025)](skript/java2/lecture10.md)
+- [Vorlesung 1, 2. April 2025: Wiederholung Programmierung I + Klausurbesprechung](skript/java2/lecture01.md)
+- [Vorlesung 2, 10. April 2025: Wiederholung Programmierung I + Klausurbesprechung, Komparatoren](skript/java2/lecture02.md)
+- [Vorlesung 3, 22. April 2025: Ausnahmen (Exceptions), Datenklassen (Records), Maven, Lombok](skript/java2/lecture03.md)
+- [Vorlesung 4, 24. April 2025: Innere Klassen (Inner Classes), Lambda-Ausdrücke (Lambdas)](skript/java2/lecture04.md)
+- [Vorlesung 5, 30. April 2025: Schlüsseltransformationen (Hashing), Bäume, Assoziativspeicher (Maps)](skript/java2/lecture05.md)
+- [Vorlesung 6, 8. Mai 2025: Optionals, Wiederholung Vorlesung 2 - 5](skript/java2/lecture06.md)
+- [Vorlesung 7, 14. Mai 2025: Wiederholung Vorlesung 2 - 5, Die Java Stream API](skript/java2/lecture07.md)
+- [Vorlesung 8, 19. Mai 2025: Die Java Stream API](skript/java2/lecture08.md)
+- [Vorlesung 9, 22. Mai 2025: Softwaretests, Komponententests (Unit Tests)](skript/java2/lecture09.md)
+- [Vorlesung 10, 5. Juni 2025: Mockito](skript/java2/lecture10.md)
