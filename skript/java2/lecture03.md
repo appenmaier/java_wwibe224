@@ -1,4 +1,4 @@
-# Vorlesung 3 (22. April 2025)
+# Termin 3 (22. April 2025)
 
 ## Ausnahmen (Exceptions)
 
@@ -13,6 +13,6 @@
 **Links**
 
 - [Doku: Datenklassen (Records)](https://jappuccini.github.io/java-docs/production/documentation/records)
-- [Doku: Maven](https://jappuccini.github.io/java-docs/production/documentation/maven)
+- [Doku: Maven](https://jappuccini.github.io/java-docs/production/additional-material/tools/maven)
 - [Doku: Lombok](https://jappuccini.github.io/java-docs/production/documentation/lombok)
 - [Demo](https://github.com/appenmaier/java_wwibe224/blob/main/src/main/java/main/D31_DataClasses.java)

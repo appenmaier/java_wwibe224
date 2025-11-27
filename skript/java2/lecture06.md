@@ -1,4 +1,4 @@
-# Vorlesung 6 (8. Mai 2025)
+# Termin 6 (8. Mai 2025)
 
 ## Optionals
 

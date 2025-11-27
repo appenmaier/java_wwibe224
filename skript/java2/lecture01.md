@@ -1,4 +1,4 @@
-# Vorlesung 1 (2. April 2025)
+# Termin 1 (2. April 2025)
 
 ## Wiederholung Programmierung I + Klausurbesprechung
 

@@ -1,4 +1,4 @@
-# Vorlesung 9 (22. Mai 2025)
+# Termin 9 (22. Mai 2025)
 
 ## Softwaretests, Komponententests (Unit Tests)
 

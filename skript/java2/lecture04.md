@@ -1,4 +1,4 @@
-# Vorlesung 4 (24. April 2025)
+# Termin 4 (24. April 2025)
 
 ## Innere Klassen (Inner Classes), Lambda-Ausdrücke (Lambdas)
 

@@ -1,4 +1,4 @@
-# Vorlesung 7 (14. Mai 2025)
+# Termin 7 (14. Mai 2025)
 
 ## Wiederholung Vorlesung 2 - 5
 
